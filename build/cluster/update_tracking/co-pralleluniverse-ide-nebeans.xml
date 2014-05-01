@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="co.pralleluniverse.ide.nebeans">
-    <module_version install_time="1398925701471" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1398933887325" last="true" origin="installer" specification_version="1.0">
         <file crc="3105551377" name="config/Modules/co-pralleluniverse-ide-nebeans.xml"/>
-        <file crc="1384506167" name="modules/co-pralleluniverse-ide-nebeans.jar"/>
+        <file crc="2998155132" name="modules/co-pralleluniverse-ide-nebeans.jar"/>
     </module_version>
 </module>

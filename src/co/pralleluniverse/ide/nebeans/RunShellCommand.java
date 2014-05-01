@@ -7,7 +7,10 @@ package co.pralleluniverse.ide.nebeans;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
 import org.openide.awt.ActionReferences;
@@ -33,11 +36,21 @@ public final class RunShellCommand implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            Runtime.getRuntime().exec("/Users/eitan/bin/killgradle.sh").waitFor();
-        } catch (IOException ex) {
+            Process p = Runtime.getRuntime().exec("pgrep -f gradle");
+            runKillChildrenForEveryLine(p.getInputStream());
+            p.waitFor();
+        } catch (IOException | InterruptedException ex) {
             Exceptions.printStackTrace(ex);
-        } catch (InterruptedException ex) {
-            Exceptions.printStackTrace(ex);
+        }
+    }
+
+    private static void runKillChildrenForEveryLine(InputStream is) throws InterruptedException, IOException {
+        String pid;
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
+            while ((pid = br.readLine()) != null) {
+                // kill all the childeren of the pid
+                Runtime.getRuntime().exec("pkill -P " + pid).waitFor();
+            }
         }
     }
 }
