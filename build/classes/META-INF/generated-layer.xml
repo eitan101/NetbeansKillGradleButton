@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Build">
+            <file name="co-pralleluniverse-ide-nebeans-RunShellCommand.instance">
+                <!--co.pralleluniverse.ide.nebeans.RunShellCommand-->
+                <attr
+                    bundlevalue="co.pralleluniverse.ide.nebeans.Bundle#CTL_RunShellCommand" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="co.pralleluniverse.ide.nebeans.RunShellCommand"/>
+                <attr name="iconBase" stringvalue="co/pralleluniverse/ide/nebeans/Delete.png"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Tools">
+            <file name="co-pralleluniverse-ide-nebeans-RunShellCommand.shadow">
+                <!--co.pralleluniverse.ide.nebeans.RunShellCommand-->
+                <attr name="originalFile" stringvalue="Actions/Build/co-pralleluniverse-ide-nebeans-RunShellCommand.instance"/>
+                <attr intvalue="0" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Toolbars">
+        <folder name="Build">
+            <file name="co-pralleluniverse-ide-nebeans-RunShellCommand.shadow">
+                <!--co.pralleluniverse.ide.nebeans.RunShellCommand-->
+                <attr name="originalFile" stringvalue="Actions/Build/co-pralleluniverse-ide-nebeans-RunShellCommand.instance"/>
+                <attr intvalue="500" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Shortcuts">
+        <file name="S-F10.shadow">
+            <!--co.pralleluniverse.ide.nebeans.RunShellCommand-->
+            <attr name="originalFile" stringvalue="Actions/Build/co-pralleluniverse-ide-nebeans-RunShellCommand.instance"/>
+        </file>
+    </folder>
+</filesystem>
