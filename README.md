@@ -1,6 +1,6 @@
 NetbeansKillGradleButton
 ========================
-This module lets you kill gradle children by simply hitting a button.
+This module lets you kill gradle's children by simply hitting a button.
 Tested on netbeans 8.0 with jdk8.
 
 ## Prerequisites
