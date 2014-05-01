@@ -6,6 +6,7 @@ Tested on netbeans 8.0 with jdk8.
 ## Prerequisites
 1. Netbeans
 2. jdk8
+3. Mac / Linux OS
 
 ## Usage
 1. Clone or download the project
